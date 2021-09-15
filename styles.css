@@ -1,28 +1,8 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    
-    display: inline-block;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 25px 80px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+
+html{
+  background-color: black;
+  color: white;
+}
   
   h1 {
       text-align: center;
@@ -37,6 +17,23 @@ ul {
    text-align: center;
   }
 
+ 
   .album-cover > img{
-    float:left;
+    
+    width: 25%;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  
+  
+
+  footer{
+    clear: left;
+   
+  }
+
+  footer > a > img{
+    height: 40px;
+    width: 40px;
   }

@@ -1,7 +1,12 @@
+@font-face{
+  font-family: Ubuntu;
+  src: url(Ubuntu/Ubuntu-Regular.ttf);
+}
 
 html{
   background-color: black;
   color: white;
+  font-family: Ubuntu;
 }
   
   h1 {
@@ -25,15 +30,25 @@ html{
     display: inline-block;
   }
 
+  .album-cover{
+    padding-bottom: 30px;
+  }
   
   
 
   footer{
     clear: left;
-   
+    background-color: rgb(15, 15, 15);
   }
 
-  footer > a > img{
+  footer > div > a > img{
     height: 40px;
     width: 40px;
   }
+
+  .footer{
+    margin: auto;
+    padding: 30px;
+    
+  }
+

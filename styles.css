@@ -1,54 +1,83 @@
+/* Style for my website */
+/* Created by: Keagan W */
+/* Created on: Nov 26 2021 */
+
+/* Adding a font to use */
 @font-face{
   font-family: Ubuntu;
   src: url(Ubuntu/Ubuntu-Regular.ttf);
 }
 
+/* Setting the styling OF THE ENTIRE WEBSITE */
 html{
   background-color: black;
   color: white;
   font-family: Ubuntu;
+  font-size: 18px;
+}
+
+/* Style the H1 of the site (the title aka KEAGAN WHISTON) */
+h1 {
+    text-align: center;
 }
   
-  h1 {
-      text-align: center;
-  }
-  
-  body {
-      width: 80%;
-      margin: auto;
-  }
-  
-  div {
-   text-align: center;
-  }
-
- 
-  .album-cover > img{
-    
-    width: 25%;
-    border-radius: 10px;
-    display: inline-block;
-  }
-
-  .album-cover{
-    padding-bottom: 30px;
-  }
-  
-  
-
-  footer{
-    clear: left;
-    background-color: rgb(15, 15, 15);
-  }
-
-  footer > div > a > img{
-    height: 40px;
-    width: 40px;
-  }
-
-  .footer{
+/* Style the body of the site to only be the middle 80% */
+body {
+    width: 80%;
     margin: auto;
-    padding: 30px;
-    
-  }
+}
 
+.main-content{
+  text-align: center;
+}
+
+/* Styling the table on the home page */
+table{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+ 
+/* Floating the image of myself to appear on the left */
+#left_image{
+  float: left;
+  max-height: 200px;
+}
+
+/* Styling the main paragraph content to have that indent look */
+.paragraph{
+  clear: left;
+}
+.paragraph > h2{
+  padding-left: 130px;
+  padding-right: 130px;
+}
+.paragraph > p{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* Styling the image on the front page */
+#vrchat{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+
+/* Footer styling */
+footer{
+  clear: left;
+  background-color: rgb(15, 15, 15);
+  text-align: center;
+  margin-top: 30px;
+}
+footer > div > a > img{
+  height: 40px;
+  width: 40px;
+}
+
+.footer{
+  margin: auto;
+  padding: 30px;
+}

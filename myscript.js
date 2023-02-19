@@ -9,3 +9,7 @@ today = mm + '/' + dd + '/' + yyyy;
 const dateTest = new Date();
 
 document.getElementById("date").innerHTML = dateTest;
+
+function myFunction() {
+    alert("Hello! I am an alert box!");
+  }

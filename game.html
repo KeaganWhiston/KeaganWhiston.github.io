@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="horizontal-nav.css">
+
+<meta charset="utf-8" />
+<title>Block Breaker</title>
+<style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    canvas {
+      background: #eee;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+
+<!-- 
+	About me page
+	Created by: Keagan W
+	Created on: Nov 26 2021
+-->
+
+</head>
+<body>
+	<h1>
+		KEAGAN WHISTON
+	</h1>
+
+	<!-- Setting up navigation of the site -->
+	<div>
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="projects.html">PROJECT PORTFOLIO</a></li>
+			<li><a href="about.html">ABOUT ME</a></li>
+            <li><a class="active" href="game.html">JAVASCRIPT PLATFORMER</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</div>
+
+
+    <canvas id="gameCanvas" width="480" height="320"></canvas>
+
+	
+
+	<!-- Setting up the footer -->
+	<footer>
+		<div class="footer">
+			<p>FIND ME ON SOCIAL MEDIA</p>
+			<a href="https://github.com/KeaganWhiston"><img src="./images/git.png"></a>
+			<a href="https://www.linkedin.com/in/keagan-whiston-01a2a8210/"><img src="./images/linkedBlue.png"></a>
+		</div>
+	</footer>
+
+    <script src="game.js" type="text/javascript"></script>
+
+
+	</body>
+</html>

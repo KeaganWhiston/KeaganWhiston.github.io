@@ -6,4 +6,6 @@ var yyyy = today.getFullYear();
 
 today = mm + '/' + dd + '/' + yyyy;
 
-document.getElementById("date").innerHTML = today;
+const dateTest = new Date();
+
+document.getElementById("date").innerHTML = dateTest;

@@ -61,6 +61,8 @@ function drawGameOverScreen() {
     const scoreElement = document.getElementById("score");
     scoreElement.innerHTML = score;
     gameOverScreen.style.display = "block";
+
+    clearInterval(interval);
 }
 
 function restartGame() {
@@ -85,7 +87,6 @@ function draw() {
             score+=1;
         }
         else {
-            dx = 0;
             drawGameOverScreen();
         }
     }
@@ -99,6 +100,8 @@ function draw() {
     
     x += dx;
     y += dy;
+
+    drawScore();
 }
 
 var interval = setInterval(draw, 10);

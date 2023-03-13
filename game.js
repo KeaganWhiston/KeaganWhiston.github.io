@@ -1,15 +1,17 @@
-var canvas = document.getElementById("gameCanvas");
-var ctx = canvas.getContext("2d");
-var ballRadius = 10;
-var x = canvas.width/2;
-var y = canvas.height-30;
-var dx = 2;
-var dy = -2;
-var paddleHeight = 10;
-var paddleWidth = 75;
-var paddleX = (canvas.width-paddleWidth)/2;
-var rightPressed = false;
-var leftPressed = false;
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
+const ballRadius = 10;
+let x = canvas.width/2;
+let y = canvas.height-30;
+const dx = 2;
+let dy = -2;
+const paddleHeight = 10;
+const paddleWidth = 75;
+let paddleX = (canvas.width-paddleWidth)/2;
+let rightPressed = false;
+let leftPressed = false;
+let score = 0;
+let gameOver = false;
 
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
@@ -39,12 +41,30 @@ function drawBall() {
     ctx.fill();
     ctx.closePath();
 }
+
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
     ctx.fillStyle = "#0095DD";
     ctx.fill();
     ctx.closePath();
+}
+
+function drawScore() {
+    ctx.font = "16px Arial";
+    ctx.fillStyle = "#0095DD";
+    ctx.fillText("Score: " + score, 8, 20);
+}
+
+function drawGameOverScreen() {
+    const gameOverScreen = document.getElementById("gameOverScreen");
+    const scoreElement = document.getElementById("score");
+    scoreElement.innerHTML = score;
+    gameOverScreen.style.display = "block";
+}
+
+function restartGame() {
+    location.reload();
 }
 
 function draw() {
@@ -61,6 +81,8 @@ function draw() {
     else if(y + dy > canvas.height-ballRadius) {
         if(x > paddleX && x < paddleX + paddleWidth) {
             dy = -dy;
+            dx *= 1.1;
+            score+=1;
         }
         else {
             alert("GAME OVER");

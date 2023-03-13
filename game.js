@@ -52,7 +52,7 @@ function drawPaddle() {
 
 function drawScore() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#000000"; // Set the color of the text to black
     ctx.fillText("Score: " + score, 8, 20); 
 }
 
@@ -70,7 +70,11 @@ function restartGame() {
 }
 
 function draw() {
+    if (gameOver) {
+        return;
+    }
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawScore();
     drawBall();
     drawPaddle();
     
@@ -101,7 +105,6 @@ function draw() {
     x += dx;
     y += dy;
 
-    drawScore();
 }
 
 var interval = setInterval(draw, 10);

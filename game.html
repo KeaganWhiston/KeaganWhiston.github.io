@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="horizontal-nav.css">
 
 <meta charset="utf-8" />
-<title>Block Breaker</title>
+<title>Games</title>
 <style>
     * {
       padding: 0;
@@ -43,7 +43,11 @@
 
 
     <canvas id="gameCanvas" width="480" height="320"></canvas>
-
+	<div id="gameOverScreen" style="display: none;">
+		<h1>Game Over</h1>
+		<p>Your score: <span id="score"></span></p>
+		<button onclick="restartGame()">Restart</button>
+	</div>
 	
 
 	<!-- Setting up the footer -->

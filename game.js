@@ -85,6 +85,7 @@ function draw() {
             score+=1;
         }
         else {
+            dx = 0;
             drawGameOverScreen();
         }
     }

@@ -3,11 +3,17 @@
 
 <form action="/action_page.php">
     <label for="psize">Enter Party Size:</label>
-    <input type="text" id="psize" name="psize"><br><br>
+    <input type="text" id="psize" name="psize" value="2"><br><br>
+
     <label for="food">Enter Food Amount:</label>
-    <input type="text" id="food" name="food"><br><br>
+    <input type="text" id="food" name="food" value="0">
+    <input type="button" value="+" onclick="incrementFood()">
+    <input type="button" value="-" onclick="decrementFood()"><br><br>
+
     <label for="water">Enter Water Amount:</label>
-    <input type="text" id="water" name="water"><br><br>
+    <input type="text" id="water" name="water" value="0">
+    <input type="button" value="+" onclick="incrementWater()">
+    <input type="button" value="-" onclick="decrementWater()"><br><br>
 
     <div id="message"></div><br><br>
 

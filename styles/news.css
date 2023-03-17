@@ -1,0 +1,55 @@
+
+.fantasy-font {
+    font-family: 'MedievalSharp', cursive;
+     text-shadow: 8px 8px 4px #000000; 
+  }
+  .fantasy-header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .fantasy-bg {
+    background-image: url("../images/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+
+  }
+  
+    
+.fantasy-text {
+    font-size: 18px;
+    line-height: 1.5;
+    border: 2px solid #fff;
+    padding: 20px;
+    color:white;
+    background-color: rgba(0,0,0,0.7);
+}
+    
+.btn-fantasy {
+    background-color: #8B0000;
+    border-color: #8B0000;
+    color: #fff;
+}
+    
+.btn-fantasy:hover,
+.btn-fantasy:focus,
+.btn-fantasy:active,
+.btn-fantasy.active {
+    background-color: #800000;
+    border-color: #800000;
+    color: #fff;
+}
+
